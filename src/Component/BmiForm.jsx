@@ -15,7 +15,16 @@ function BmiForm(){
 
             <label>Gender:
                 <input type = "text"/>
+
+                <div>
+                < select >
+                    <option value = "option1">Male</option> 
+                    <option value = "option2">Female</option>
+                </select>
+                </div>
             </label>
+
+          
 
             <button>Submit</button>
         </form>
