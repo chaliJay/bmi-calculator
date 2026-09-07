@@ -16,6 +16,8 @@ function BmiForm(){
             <label>Gender:
                 <input type = "text"/>
             </label>
+
+            <button>Submit</button>
         </form>
         
     );
