@@ -1,5 +1,6 @@
 import Header from  './Component/Header'
 import Footer from './Component/Footer'
+import BmiForm from './Component/BmiForm'
 
 function App() {
   
@@ -8,7 +9,7 @@ function App() {
     <>
     
     <Header></Header>
-
+    <BmiForm></BmiForm>
     <Footer></Footer>
 
     </>
