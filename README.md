@@ -28,3 +28,12 @@ This project is designed to be simple, responsive, and easy to understand — id
   |index.html
   |package.json
   |vite.config.js
+
+  🛠️ Tech Stack
+React — UI library
+
+Vite — Fast development bundler
+
+JavaScript (ES6+)
+
+CSS  (optional)
