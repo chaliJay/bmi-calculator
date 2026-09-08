@@ -1,4 +1,4 @@
-function BmiForm(){
+function BmiForm({formData}){
     return(
         <form>
             <label>Enter Your Weight:
@@ -14,7 +14,6 @@ function BmiForm(){
             </label>
 
             <label>Gender:
-
                 <div>
                 < select >
                     <option value = "option1">Male</option> 
@@ -22,8 +21,6 @@ function BmiForm(){
                 </select>
                 </div>
             </label>
-
-          
 
             <button>Submit</button>
         </form>
