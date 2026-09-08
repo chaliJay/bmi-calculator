@@ -37,3 +37,34 @@ Vite — Fast development bundler
 JavaScript (ES6+)
 
 CSS  (optional)
+
+🧮 How It Works
+The BMI formula used:
+
+𝐵
+𝑀
+𝐼
+=
+𝑤
+𝑒
+𝑖
+𝑔
+ℎ
+𝑡
+ 
+(
+𝑘
+𝑔
+)
+ℎ
+𝑒
+𝑖
+𝑔
+ℎ
+𝑡
+ 
+(
+𝑚
+)
+2
+The app instantly calculates BMI and displays the correct category based on WHO standards.
