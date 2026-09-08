@@ -2,6 +2,7 @@ import Header from  './Component/Header';
 import Footer from './Component/Footer';
 import BmiForm from './Component/BmiForm';
 import BmiPreview from './Component/BmiPreview';
+import ClearButton from './Component/ClearButton';
 import { useState } from 'react';
 
 function App() {
@@ -22,7 +23,7 @@ function onAgeChange(event){
   setFormData({...formData, age:event.target.value})
 }
 
-  return (
+return (
     <>
     
     <Header></Header>
@@ -37,6 +38,10 @@ function onAgeChange(event){
     <BmiPreview 
       bmiFormData = {formData}>
     </BmiPreview>
+
+    <ClearButton
+      clearButton = {formData}>
+    </ClearButton>
 
     <Footer></Footer>
 
