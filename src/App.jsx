@@ -17,6 +17,11 @@ function onWeightChange(event){
 function onHeightChange(event){
   setFormData({...formData, height:event.target.value})
 }
+
+function onAgeChange(event){
+  setFormData({...formData, age:event.target.value})
+}
+
   return (
     <>
     
@@ -25,7 +30,8 @@ function onHeightChange(event){
     <BmiForm 
       formData = {formData}
       onWeightChange={onWeightChange}
-      onHeightChange={onHeightChange}> 
+      onHeightChange={onHeightChange}
+      onAgeChange={onAgeChange}> 
     </BmiForm>
 
     <BmiPreview 
