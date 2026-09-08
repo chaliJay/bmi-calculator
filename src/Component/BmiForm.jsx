@@ -1,12 +1,16 @@
-function BmiForm({formData}){
+function BmiForm({formData, onWeightChange, onHeightChange}){
     return(
         <form>
             <label>Enter Your Weight:
-                <input type = "text"/>
+                <input type = "text"
+                        value={formData.weight}
+                        onChange={onWeightChange}/>
             </label>
 
             <label>Enter Your Height:
-                <input type = "text"/>
+                <input type = "text"
+                value={formData.height}
+                onChange = {onHeightChange}/>
             </label>
 
             <label>Enter Your Age:

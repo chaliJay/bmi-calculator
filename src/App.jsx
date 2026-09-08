@@ -6,20 +6,32 @@ import { useState } from 'react';
 
 function App() {
  const [formData, setFormData] = useState({
-                                  height: 0,
-                                  weight: 0,
-                                  age: 0,
+                                  height: "",
+                                  weight: "",
+                                  age: "",
                                   gender: ""});
+function onWeightChange(event){
+  setFormData({...formData, weight:event.target.value})
+}
+
+function onHeightChange(event){
+  setFormData({...formData, height:event.target.value})
+}
   return (
     <>
     
     <Header></Header>
-    <BmiForm>
-      bmiFormData = {formData}
+
+    <BmiForm 
+      formData = {formData}
+      onWeightChange={onWeightChange}
+      onHeightChange={onHeightChange}> 
     </BmiForm>
-    <BmiPreview>
-      bmiFormData = {formData}
+
+    <BmiPreview 
+      bmiFormData = {formData}>
     </BmiPreview>
+
     <Footer></Footer>
 
     </>
