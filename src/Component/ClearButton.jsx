@@ -1,6 +1,6 @@
-function ClearButton({formData}){
+function ClearButton({clearHandler}){
     return(
-        <button onClick= {formData}>Clear</button>
+        <button onClick= {clearHandler}>Clear</button>
     );
 }
 

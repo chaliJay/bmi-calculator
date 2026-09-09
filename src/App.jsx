@@ -23,6 +23,12 @@ function onAgeChange(event){
   setFormData({...formData, age:event.target.value})
 }
 
+function clearHandler(){
+  setFormData({height:"",weight:"", age:""})
+
+}
+
+
 return (
     <>
     
@@ -40,7 +46,7 @@ return (
     </BmiPreview>
 
     <ClearButton
-      clearButton = {formData}>
+      clearHandler = {clearHandler}>
     </ClearButton>
 
     <Footer></Footer>
