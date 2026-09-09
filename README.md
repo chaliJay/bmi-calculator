@@ -18,16 +18,16 @@ This project is designed to be simple, responsive, and easy to understand — id
  📂 Project Structure
  src/
   | components/
-    | BimForm.jsx
-    | BimPreview.jsx
-    | ClearButton.jsx
-    | Footer.jsx
-    | Header.jsx
-  | App.jsx
-  | main.jsx
-  |index.html
-  |package.json
-  |vite.config.js
+   | |- BimForm.jsx
+    |- BimPreview.jsx
+    |- ClearButton.jsx
+    |- Footer.jsx
+    |- Header.jsx
+  |- App.jsx
+  |- main.jsx
+  |-index.html
+  |- package.json
+  |- vite.config.js
 
   🛠️ Tech Stack
 React — UI library
