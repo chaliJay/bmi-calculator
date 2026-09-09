@@ -1,6 +1,6 @@
-function BmiForm({formData, onWeightChange, onHeightChange, onAgeChange}){
+function BmiForm({formData, onWeightChange, onHeightChange, onAgeChange, calculateBmi}){
     return(
-        <form>
+        <form onSubmit={calculateBmi}>
             <label>Enter Your Weight:
                 <input  type = "text"
                         value={formData.weight}
@@ -28,7 +28,7 @@ function BmiForm({formData, onWeightChange, onHeightChange, onAgeChange}){
                 </div>
             </label>
 
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </form>
         
     );

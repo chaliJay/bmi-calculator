@@ -11,22 +11,29 @@ function App() {
                                   weight: "",
                                   age: "",
                                   gender: ""});
-function onWeightChange(event){
-  setFormData({...formData, weight:event.target.value})
-}
 
-function onHeightChange(event){
-  setFormData({...formData, height:event.target.value})
-}
+  const[bmi, setBmi] = useState("");
 
-function onAgeChange(event){
-  setFormData({...formData, age:event.target.value})
-}
+  function onWeightChange(event){
+    setFormData({...formData, weight:event.target.value})
+  }
 
-function clearHandler(){
-  setFormData({height:"",weight:"", age:""})
+  function onHeightChange(event){
+    setFormData({...formData, height:event.target.value})
+  }
 
-}
+  function onAgeChange(event){
+    setFormData({...formData, age:event.target.value})
+  }
+
+  function clearHandler(){
+    setFormData({height:"",weight:"", age:""})
+  }
+
+  function calculateBmi(event){
+    event.preventDefault();
+    setBmi(formData.weight/(formData.height*formData.height))
+  }
 
 
 return (
@@ -38,11 +45,13 @@ return (
       formData = {formData}
       onWeightChange={onWeightChange}
       onHeightChange={onHeightChange}
-      onAgeChange={onAgeChange}> 
+      onAgeChange={onAgeChange}
+      calculateBmi = {calculateBmi}> 
     </BmiForm>
 
     <BmiPreview 
-      bmiFormData = {formData}>
+      bmiFormData = {formData}
+      bmi = {bmi}>       
     </BmiPreview>
 
     <ClearButton
